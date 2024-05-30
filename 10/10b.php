@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Prime Number Checker</title>
-</head>
-<body>
-  <h1>Prime Number Checker</h1>
-  <form method="POST">
-    <label>Number</label>
-    <input name="num" required/>
-    <button type="submit">Check!</button>
-  </form>
-    <p>
-  <?php
+<?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $num = $_POST["num"];
     if ($num == 1 || $num == 0) {
@@ -31,6 +18,3 @@
     echo "The number $num is a prime number";
   }
   ?>
-    </p>
-</body>
-</html>

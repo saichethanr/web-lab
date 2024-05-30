@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12th prog</title>
+    <title>Thoughts</title>
+    <style>
+        body {
+            background: #eee;
+        }
+
+        label {
+            display: block;
+            font-size: 25px;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-  
-    <form  method="post" action="11.php">
-        <label>Information</label>
-        <textarea name="info" id="info" rows="20" cols="80"></textarea>
-        <input type="submit"><label >submit</label>
-        <input type="reset"><label >reset</label>
-      
+
+    <form method="POST">
+        <label>Information:</label>
+        <textarea rows="20" cols="80" name="info">
+    </textarea>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+     
     </form>
 </body>
-</html>
